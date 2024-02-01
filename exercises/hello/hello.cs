@@ -1,7 +1,10 @@
+using System;
+
 class hello
 {
     static void Main()
     {
-        System.Console.Write("hello johannes\n");
+        string name = Environment.UserName;
+        System.Console.Write("hello {0}\n", name);
     }
 }
