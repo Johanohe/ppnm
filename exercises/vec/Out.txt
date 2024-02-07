@@ -1,0 +1,7 @@
+Making A: 1 1 1
+Making B: 2 2 2
+Making C: 2 2 2
+Dot product between A and B: 6
+Checking if B approx. equal to C: True
+A - B = -1 -1 -1
+B*PI = 6.28318530717959 6.28318530717959 6.28318530717959
