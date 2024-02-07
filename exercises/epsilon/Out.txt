@@ -1,0 +1,10 @@
+My max int = 2147483647
+Log2(x) = -52
+Log2(y) = -23
+a==b ? False
+a>1  ? False
+b>1  ? True
+d1=7.999999999999999e-001
+d2=8.000000000000000e-001
+d1==d2 ? => False
+d1 approx= d2 ? => True
