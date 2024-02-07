@@ -8,4 +8,4 @@ vec.dll: vec.cs
 	mcs -target:library -out:vec.dll vec.cs
 
 clean:
-	$(RM) main.exe Out.txt
+	$(RM) main.exe Out.txt vec.dll
