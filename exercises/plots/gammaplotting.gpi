@@ -1,0 +1,13 @@
+set terminal svg background "white"
+set autoscale
+set out "Gamma.gnuplot.svg"
+set key left
+set xlabel "x"
+set ylabel "Gamma(x)"
+set tics out
+set grid
+set title "Gamma function"
+plot[-5:5][-5:5]\
+    "GammaOut.txt" with lines \
+    ,"factorial.data.txt" with points pointtype 6 notitle
+

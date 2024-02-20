@@ -1,0 +1,13 @@
+set terminal svg background "white"
+set autoscale
+set out "LnGamma.gnuplot.svg"
+set key left
+set xlabel "x"
+set ylabel "Ln(Gamma(x))"
+set tics out
+set grid
+set title "Ln of Gamma function"
+plot\
+    "LnGammaOut.txt" with lines
+
+
