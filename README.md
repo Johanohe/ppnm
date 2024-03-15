@@ -3,7 +3,7 @@
 
 | #   | Homework        |  A  |  B  |  C  |  Σ  |
 | --- | :-------------- | :-: | :-: | :-: | :-: |
-| 1   | LinearEquations |     |     |     |     |
+| 1   | LinearEquations |  6  |  3  |     |  9  |
 | 2   | Eigenvalues     |     |     |     |     |
 | 3   | LeastSquares    |     |     |     |     |
 | 4   | Splines         |     |     |     |     |
@@ -14,4 +14,4 @@
 | 9   | Minimisation    |     |     |     |     |
 | 10  | Optimization    |     |     |     |     |
 | 11  | NeuralNetwork   |     |     |     |     |
-| SUM |                 |     |     |     |  0  |
+| SUM |                 |     |     |     |  9  |
