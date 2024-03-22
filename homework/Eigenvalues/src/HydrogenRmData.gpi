@@ -1,0 +1,11 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/HydrogenRmData.gnuplot.svg"
+set key left
+set xlabel "r_{max}"
+set ylabel "\epsilon_0"
+set tics out
+set grid
+set title "Lowest energy eigenvalue for different r_{max}"
+plot[3:][-0.51:]\
+    "data/HydrogenRmData.txt" with lines

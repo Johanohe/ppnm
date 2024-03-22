@@ -1,8 +1,8 @@
 using static System.Console;
 
-public class main
+public static class Test
 {
-    public static void Test()
+    public static void TestAll()
     {
 
         matrix A = matrix.RandomSymMatrix(5);
@@ -31,8 +31,11 @@ public class main
         VVT.PrettyPrint("Matrix V*V^T:");
 
     }
-    public static void Main()
+}
+public class main
+{
+    public static void Main(string[] args)
     {
-        Test();
+        Test.TestAll();
     }
 }

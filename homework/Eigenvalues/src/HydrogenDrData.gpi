@@ -1,0 +1,11 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/HydrogenDrData.gnuplot.svg"
+set key left
+set xlabel "\Delta r"
+set ylabel "\epsilon_0"
+set tics out
+set grid
+set title "Lowest energy eigenvalue for different \Delta r"
+plot[:0.3][-0.505:]\
+    "data/HydrogenDrData.txt" with lines

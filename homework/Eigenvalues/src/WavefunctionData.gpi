@@ -1,0 +1,14 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/Wavefunction.gnuplot.svg"
+set key right
+set xlabel "r"
+set ylabel ""
+set tics out
+set grid
+set title "Wavefunctions"
+plot\
+    "data/WavefunctionData.txt" using 1:2 with lines title "k = 0"\
+    , "data/WavefunctionData.txt" using 1:3 with lines title "k = 1"\
+    ,"data/WavefunctionData.txt" using 1:4 with lines title "k = 2"\
+    , "data/HydrogenExact.txt" using 1:2 with lines dt "-" title "Exact values for k = 0"\
