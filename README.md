@@ -5,7 +5,7 @@
 | --- | :-------------- | :-: | :-: | :-: | :-: |
 | 1   | LinearEquations |  6  |  3  |     |  9  |
 | 2   | Eigenvalues     |  6  |  3  |     |  9  |
-| 3   | LeastSquares    |     |     |     |     |
+| 3   | LeastSquares    |  6  |  3  |  1  |  10 |
 | 4   | Splines         |     |     |     |     |
 | 5   | ODE             |     |     |     |     |
 | 6   | Integration     |     |     |     |     |
@@ -14,4 +14,4 @@
 | 9   | Minimisation    |     |     |     |     |
 | 10  | Optimization    |     |     |     |     |
 | 11  | NeuralNetwork   |     |     |     |     |
-| SUM |                 |     |     |     | 18  |
+| SUM |                 |     |     |     | 28  |

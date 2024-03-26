@@ -1,0 +1,14 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/Plot.svg"
+set key right
+set xlabel "t"
+set ylabel "y(t)"
+set tics out
+set grid
+set title ""
+plot\
+    "data/Data.txt" using 1:2 with lines title "Best fit"\
+    ,"data/Data.txt" using 1:3 with lines title "c-{/Symbol d}c"\
+    ,"data/Data.txt" using 1:4 with lines title "c+{/Symbol d}c"\
+    ,"src/TestData.txt" using 1:2:3 with errorbars title "Decay data"
