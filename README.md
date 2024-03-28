@@ -8,10 +8,10 @@
 | 3   | LeastSquares    |  6  |  3  |  1  |  10 |
 | 4   | Splines         |  6  |     |     |  6  |
 | 5   | ODE             |  6  |     |     |  6  |
-| 6   | Integration     |     |     |     |     |
+| 6   | Integration     |  6  |     |     |  6  |
 | 7   | MonteCarlo      |     |     |     |     |
 | 8   | Roots           |     |     |     |     |
 | 9   | Minimisation    |     |     |     |     |
 | 10  | Optimization    |     |     |     |     |
 | 11  | NeuralNetwork   |     |     |     |     |
-| SUM |                 |     |     |     | 40  |
+| SUM |                 |     |     |     | 46  |

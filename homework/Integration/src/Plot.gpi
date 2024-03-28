@@ -1,0 +1,13 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/Plot.svg"
+set key left
+set xlabel "z"
+set ylabel "Erf(z)"
+set tics out
+set grid
+set title ""
+plot[][-1.2:1.2]\
+    "data/Data.txt" using 1:2 with lines title "Calculated error function"\
+    ,"src/TableValues.txt" using 1:2 with points pointtype 6 lc rgb "blue" title "Table values from wikipedia" \
+    ,"src/TableValues.txt" using (-($1)):(-($2)) with points pointtype 6 lc rgb "blue" notitle 
