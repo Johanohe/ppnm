@@ -1,0 +1,2 @@
+(Integral value, estimated error) = (1.38393273475375, 0.0120070514735315), at N = 100000 random points
+Actual value: 1.3932039296856768591842462603255

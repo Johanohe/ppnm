@@ -1,0 +1,13 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/Plot.svg"
+set key right
+set xlabel "Number of sampling points (N)"
+set ylabel ""
+set tics out
+set grid
+set title "Estimated error and actual error of a plain Monte Carlo integration of the unit circle"
+plot\
+    "data/Data.txt" using 1:2 with lines title "Estimated error"\
+    ,"data/Data.txt" using 1:3 with lines title "Actual error"\
+    ,"data/Data.txt" using 1:4 with lines title "1/Sqrt(N)"

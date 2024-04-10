@@ -9,9 +9,9 @@
 | 4   | Splines         |  6  |     |     |  6  |
 | 5   | ODE             |  6  |     |     |  6  |
 | 6   | Integration     |  6  |     |     |  6  |
-| 7   | MonteCarlo      |     |     |     |     |
+| 7   | MonteCarlo      |  6  |     |     |  6  |
 | 8   | Roots           |     |     |     |     |
 | 9   | Minimisation    |     |     |     |     |
 | 10  | Optimization    |     |     |     |     |
 | 11  | NeuralNetwork   |     |     |     |     |
-| SUM |                 |     |     |     | 46  |
+| SUM |                 |     |     |     | 52  |
