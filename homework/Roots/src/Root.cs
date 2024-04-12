@@ -35,11 +35,8 @@ public static class Root
         {
             loop += 1;
             fx = f(x);
-            // if (loop < 10) Console.WriteLine(fx[0]);
             JacobiUpdate(J, f, x);
-            // if (loop < 4) J.print();
             delX = QRGS.Solve(J, -fx);
-            // if (loop < 10) Console.WriteLine(delX[0]);
             lambda = 1;
             while ((f(x + lambda * delX).norm() > ((1 - lambda / 2) * fx.norm())) && lambda >= 1 / 64) lambda /= 2;
 
