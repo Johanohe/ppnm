@@ -1,0 +1,2 @@
+Rosenbrock minima starting from (1,2): x = 1.00001069591895, y = 1.00002132624978 , using 4 steps
+Himmelblau minima starting from (0.5,0.5): x = -2.80511847683218, y = 3.13131251559874, using 25 steps
