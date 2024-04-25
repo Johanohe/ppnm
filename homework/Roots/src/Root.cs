@@ -30,16 +30,13 @@ public static class Root
         matrix J = new matrix(xs.size);
         double lambda = 1;
         vector fx = f(x);
-        int loop = 0;
-        while (!vector.approx(fx, zeros, eps, 0) && loop < 4)
+        while (!vector.approx(fx, zeros, eps, 0))
         {
-            loop += 1;
             fx = f(x);
             JacobiUpdate(J, f, x);
             delX = QRGS.Solve(J, -fx);
             lambda = 1;
             while ((f(x + lambda * delX).norm() > ((1 - lambda / 2) * fx.norm())) && lambda >= 1 / 64) lambda /= 2;
-
             x += lambda * delX;
         }
         return x;

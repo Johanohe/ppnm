@@ -1,2 +1,2 @@
 Rosenbrock minima starting from (1,2): x = 0.999999999998631, y = 0.999999999997262
-Himmelblau minima starting from (0.5,0.5): x = -0.270861107110857, y = -0.922927757086413
+Himmelblau minima starting from (0.5,0.5): x = -0.270844592172467, y = -0.92303854763686
