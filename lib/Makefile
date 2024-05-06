@@ -8,3 +8,5 @@ matrix.dll : vector.dll matrix.cs matrix.extended.cs ; $(MKLIB)
 vector.dll : vector.cs ; $(MKLIB)
 
 QRGS.dll : QRGS.cs matrix.dll vector.dll; $(MKLIB)
+
+Minimize.dll : Minimize.cs vector.dll matrix.dll QRGS.dll ; $(MKLIB)
