@@ -1,11 +1,11 @@
-Rosenbrock minima using downhill simplex starting from (1,2): x = 1.0000006786295, y = 1.00000131118691.
-Using 212 steps, function value 6.72805950017525E-13
+Rosenbrock minima using downhill simplex starting from (1,2): x = 1.00000111688107, y = 1.00000237930664.
+Using 203 steps, function value 3.3657071995764E-12
 
 Rosenbrock minima using Newton starting from (1,2): x = 1.00001069591895, y = 1.00002132624978.
 Using 4 steps,function value 1.14834364528863E-10
 
-Himmmelblau minima using downhill simplex starting from (0.5,0.5): x = -2.80512161974254, y = 3.13131073008479.
-Using 124 steps, function value 5.42153845033275E-10
+Himmmelblau minima using downhill simplex starting from (0.5,0.5): x = -2.80512183936445, y = 3.13131581890562.
+Using 122 steps, function value 8.792794402878E-10
 
 Himmelblau minima using Newton starting from (0.5,0.5): x = -2.80511810819699, y = 3.13131249531605.
 Using 17 steps, function value 3.64478261818186E-14

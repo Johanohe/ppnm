@@ -228,7 +228,7 @@ public static class Minimize
         }
 
         // Runs twice to make sure minimum is reached
-        if (doTwice) return DownhillSimplex(f, vertexs[minPos], acc, initSize, false, nSteps);
+        if (doTwice) return DownhillSimplex(f, vertexs[minPos], acc, initSize / 10, false, nSteps);
         return (vertexs[minPos], nSteps);
     }
 }
