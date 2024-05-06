@@ -1,0 +1,12 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/Plot.svg"
+set key right
+set xlabel ""
+set ylabel ""
+set tics out
+set grid
+set title "Response from 1 hidden layer 12 neuron network. 1000 training data points from [-1,1]"
+plot[-1.2:1.2][]\
+    "data/TestData.txt" using 1:2 with lines title "Response from neural network"\
+    ,"data/TestData.txt" using 1:3 with lines title "Cos(5*x-1) * Exp(-x^2)"

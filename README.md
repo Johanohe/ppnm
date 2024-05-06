@@ -12,5 +12,5 @@
 | 7   | MonteCarlo      |  6  |     |     |  6  |
 | 8   | Roots           |  6  |     |     |  6  |
 | 9   | Minimization    |  6  |     |     |  6  |
-| 10  | NeuralNetwork   |     |     |     |     |
-| SUM |                 |     |     |     | 64  |
+| 10  | NeuralNetwork   |  6  |     |     |  6  |
+| SUM |                 |     |     |     | 70  |
