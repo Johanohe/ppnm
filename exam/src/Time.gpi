@@ -1,0 +1,12 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/TimePlot.svg"
+set key right
+set xlabel "Matrix size (n x n)"
+set ylabel "Real time (s)"
+set tics out
+set grid
+set title "Real time for different factorization techniques given different matrix sizes"
+plot\
+    "data/HessenbergTime.txt" using 1:2 with lp title "Hessenberg time"\
+    ,"data/QRGSTime.txt" using 1:2 with lp title "QRGS time"

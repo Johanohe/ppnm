@@ -2,7 +2,7 @@
 using static System.Math;
 public partial class matrix
 {
-    public static matrix RandomMatrix(int n = 3, int m = 3)
+    public static matrix RandomMatrix(int n = 3, int m = 3, double min = -1, double max = 1)
     {
         var rnd = new System.Random();
         matrix mat = new matrix(n, m);
@@ -10,15 +10,15 @@ public partial class matrix
         {
             for (int x = 0; x < n; x++)
             {
-                mat[i][x] = rnd.NextDouble();
+                mat[i][x] = rnd.NextDouble() * (max - min) + min;
             }
 
         }
         return mat;
     }
-    public static matrix RandomSymMatrix(int n = 3)
+    public static matrix RandomSymMatrix(int n = 3, double min = -1, double max = 1)
     {
-        matrix mat = RandomMatrix(n, n);
+        matrix mat = RandomMatrix(n, n, min, max);
         return mat + mat.T;
     }
     public void PrettyPrint(string s = "", string format = "{0,10:g3} ", double acc = 1e-6)
