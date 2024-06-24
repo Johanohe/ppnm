@@ -11,6 +11,6 @@
 | 6   | Integration     |  6  |     |     |  6  |
 | 7   | MonteCarlo      |  6  |     |     |  6  |
 | 8   | Roots           |  6  |     |     |  6  |
-| 9   | Minimization    |  6  |     |     |  6  |
+| 9   | Minimization    |  6  |  3  |     |  6  |
 | 10  | NeuralNetwork   |  6  |     |     |  6  |
-| SUM |                 |     |     |     | 70  |
+| SUM |                 |     |     |     | 73  |

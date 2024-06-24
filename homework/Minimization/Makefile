@@ -9,10 +9,18 @@ MKLIB = mcs -target:library -out:$@ $(LIBS) $(CODE)
 
 .PHONEY : all clean directories
 
-all : data/TestData.txt
+all : data/TestData.txt plots/HiggsPlot.svg
+
+plots/HiggsPlot.svg :  HiggsPlot.gpi HiggsFitData.txt HiggsData.txt
+	gnuplot $<
 
 data/TestData.txt : TestData.exe
 	mono $< > $@
+
+data/HiggsFitData.txt : HiggsBoson.exe;
+	mono $< < HiggsData.txt 1> $@
+
+HiggsBoson.exe : HiggsBoson.cs Minimize.dll vector.dll ; $(MKEXE)
 
 TestData.exe : TestData.cs Minimize.dll vector.dll ; $(MKEXE)
 

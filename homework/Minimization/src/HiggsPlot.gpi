@@ -1,0 +1,12 @@
+set terminal svg background "white"
+set autoscale
+set out "plots/HiggsPlot.svg"
+set key right
+set xlabel "energy (GeV)"
+set ylabel "signal (A.U.)"
+set tics out
+set grid
+set title "Plot of signal vs. energy data, with a corresponding fit"
+plot\
+    "HiggsData.txt" using 1:2:3 with errorbars title "Experimental data"\
+    ,"data/HiggsFitData.txt" using 1:2 with lines title "Function fit"\
