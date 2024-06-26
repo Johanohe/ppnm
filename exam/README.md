@@ -36,3 +36,5 @@ Using my implementations of Gram-Schmidt orthoginalization and Hessenberg factor
 
 > Check if Jacobi eigenvalue algorithm applied cleverly (eigenvalue-by-eigenvalue, and don't zero the elements that are already zero) to a tridiagonal matrix takes O(n) operations.
 
+ - By having the initial matrix in a tridiagonal form one can reduce the number of operations for a sweep. The normal cyclic Jacobi eigenvalue algorithm needs O(n³) operations for a sweep and converges after a small number of sweeps.
+ - The algorithm works by applying Jacobi rotations that zeros pairs of off-diagonal elements. By applying the roations along the diagonal of the tridiagonal matrix, and since after a Jacobi rotation the sums of squares of all the off-diagonal elements are reduced, this alows us to find all eigenvalues in O(n²) operations. However, in practice, convergence for a small number of dominant eigenvalues can happen much faster, which effectively reduces the complexity to O(n) for finding the most important eigenvalues.
